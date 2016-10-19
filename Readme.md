@@ -16,3 +16,8 @@ The goal of this project is to create a spellchecker application that allows use
 A HashSet is used for the dictionary as it allows consant time additions as well as lookups, and it does not allow for duplicates.  
 
 The program is multithreaded, as it checks the spelling of each word in its own thread. 
+
+Comments:
+
+- Spell checker does not currently remove punctuation such as periods and brackets when considering spelling.
+- The inclusion of multi threadding while spellchecking adds much more complexity. Threads are started in order of word appearance but can finish at different times which means that words must be resorted in order of appearance after threads are joined.
